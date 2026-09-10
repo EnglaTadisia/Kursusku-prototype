@@ -59,9 +59,9 @@ $year = date('Y'); ?>
       </ol>
     </section>
     <section id="media">
-      <h2>Kenali Program Kami</h2> <img src="assets/images/hero-kursus.jpg" alt="Mahasiswa sedang mengikuti kegiatan kursus komputer" width="640">
+      <h2>Kenali Program Kami</h2> <img src="assets/img/hero-kursus.jpg" alt="Mahasiswa sedang mengikuti kegiatan kursus komputer" width="640">
       <h3>Video Singkat</h3> <video controls width="640">
-        <source src="assets/video/intro-kursus.mp4" type="video/mp4"> Browser Anda tidak mendukung video HTML5.
+        <source src="assets/video/intro-kursusku.mp4" type="video/mp4"> Browser Anda tidak mendukung video HTML5.
       </video>
       <p> <a href="https://www.php.net/" target="_blank" rel="noopener"> Dokumentasi PHP </a> </p>
     </section>
