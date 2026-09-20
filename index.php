@@ -18,6 +18,7 @@ $year = date('Y'); ?>
     <section id="hero">
       <h1><?= htmlspecialchars($tagline) ?></h1>
       <p> Temukan kursus teknologi yang relevan untuk meningkatkan keterampilan Anda. </p> <a href="#katalog"> Lihat Katalog Kursus </a>
+      <a href="fee-calculator.php">Lihat Estimasi Biaya</a>
     </section>
     <section id="keunggulan">
       <h2>Mengapa Memilih KursusKu?</h2>
