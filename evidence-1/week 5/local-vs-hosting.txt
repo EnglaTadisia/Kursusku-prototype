@@ -1,0 +1,33 @@
+LOCAL VS HOSTING
+
+1. URL
+Local    : kursusku-prototype.test
+Hosting  : alamat website dari server
+
+2. Database
+Local    : Database di komputer sendiri
+Hosting  : Database di server
+
+3. Environment
+Local    : Development
+Hosting  : Production
+
+4. SSL
+Local    : HTTP
+Hosting  : HTTPS jika SSL tersedia
+
+5. Debug
+Local    : Debug dapat digunakan
+Hosting  : Debug sebaiknya dimatikan
+
+6. Secret
+Local    : Disimpan pada konfigurasi lokal
+Hosting  : Disimpan pada server
+
+7. Document Root
+Local    : Folder project Laragon
+Hosting  : Folder website pada server
+
+Kesimpulan:
+Local digunakan untuk pengembangan dan pengujian.
+Hosting digunakan untuk menjalankan website pada server.

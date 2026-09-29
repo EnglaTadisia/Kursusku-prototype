@@ -65,11 +65,17 @@ $courses = [
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= htmlspecialchars($siteName) ?></title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body> 
   <header>
-    <nav aria-label="Navigasi utama"> <a href="index.php"> <strong><?= htmlspecialchars($siteName) ?></strong> </a> <a href="#keunggulan">Keunggulan</a> <a href="#katalog">Katalog</a> <a href="#alur">Cara Daftar</a> <a href="#kontak">Kontak</a> </nav>
+    <nav aria-label="Navigasi utama"> 
+      <a href="index.php"> <strong><?= htmlspecialchars($siteName) ?></strong> </a> 
+      <a href="#keunggulan">Keunggulan</a> <a href="#katalog">Katalog</a> 
+      <a href="#alur">Cara Daftar</a> <a href="#kontak">Kontak</a> 
+    </nav>
   </header>
   <main>
     <section id="hero">
@@ -93,7 +99,6 @@ $courses = [
       </article>
     </section> 
     <section id="katalog">
-      <section id="katalog">
 
     <h2>Katalog Kursus</h2>
 

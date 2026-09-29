@@ -1,0 +1,29 @@
+1. Form kosong
+Input: Tidak mengisi field wajib
+Hasil: Validasi browser muncul
+Status: Berhasil
+
+2. Nama terlalu pendek
+Input: Nama dengan jumlah karakter terlalu sedikit
+Hasil: Validasi muncul
+Status: Berhasil
+
+3. Email salah
+Input: engla@
+Hasil: Validasi format email muncul
+Status: Berhasil
+
+4. GET
+Input: Data latihan
+Hasil: Data terlihat pada URL setelah tanda ?
+Status: Berhasil
+
+5. POST
+Input: Data latihan
+Hasil: Data tidak muncul sebagai query string pada URL dan ditampilkan di halaman hasil
+Status: Berhasil
+
+6. Tampilan mobile
+Ukuran: sekitar 360 px
+Hasil: Form menjadi satu kolom dan tidak ada scroll horizontal
+Status: Berhasil
