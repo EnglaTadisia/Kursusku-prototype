@@ -28,8 +28,8 @@
 
     <form action="process-registration.php" method="POST" class="registration-form">
 
-        <input type="hidden" name="source" value="week-05">
-<div class="form-group">
+ <input type="hidden" name="source" value="week-05">
+div class="form-group">
     <label for="name">Nama Lengkap</label>
 
     <input
@@ -147,4 +147,4 @@
 
 </main>
 </body>
-</html>
+</html>       
