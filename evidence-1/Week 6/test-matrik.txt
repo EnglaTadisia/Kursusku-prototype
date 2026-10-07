@@ -1,0 +1,20 @@
+EVIDENCE WEEK 06
+Test Matrix Pertemuan 6
+Hasil pengujian fitur pendaftaran kursus KursusKu UIN.
+
+No  Skenario                       Actual                            Expected                          Status
+--  -----------------------------  --------------------------------  --------------------------------  ------
+1   Mahasiswa, Web Dasar, 1 paket  Rp 240.000                        Rp 240.000                        PASS
+2   Guru, PHP Dasar, 1 paket       Rp 340.000                        Rp 340.000                        PASS
+3   Umum, Laravel Dasar, 1 paket   Rp 500.000                        Rp 500.000                        PASS
+4   Mahasiswa, Web Dasar, 2 paket  Rp 480.000                        Rp 480.000                        PASS
+5   Nama kosong                    Nama wajib diisi.                 Nama wajib diisi.                 PASS
+6   Email tidak valid              Email tidak valid.                Email tidak valid.                PASS
+7   Minat kosong                   Belum memilih minat.              Belum memilih minat.              PASS
+8   3 minat                        Frontend, Backend, Database       Frontend, Backend, Database       PASS
+9   Metode offline                 Tatap Muka                        Tatap Muka                        PASS
+10  Metode hybrid                  Hybrid                            Hybrid                            PASS
+11  GET process.php                Redirect ke register.php          Redirect ke register.php          PASS
+12  Tambah fasilitas               Dirender otomatis dengan foreach  Dirender otomatis dengan foreach  PASS
+
+KursusKu UIN © 2026
