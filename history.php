@@ -11,10 +11,9 @@ $dataAwal = [
 
 $pendaftarBaru = $_SESSION['registrations'] ?? [];
 
-$history = array_merge($dataAwal, $pendaftarBaru);
+$registrations = array_merge($dataAwal, $pendaftarBaru);
 
-$grandTotal = array_sum(array_column($history, 'total'));
-
+$grandTotal = array_sum(array_column($registrations, 'total'));
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -212,7 +211,7 @@ $grandTotal = array_sum(array_column($history, 'total'));
                 </thead>
 
                 <tbody>
-                    <?php foreach ($history as $i => $row): ?>
+                   <?php foreach ($registrations as $i => $row): ?>
                         <tr>
                             <td class="col-no"><?= $i + 1 ?></td>
                             <td><?= e($row['name']) ?></td>
