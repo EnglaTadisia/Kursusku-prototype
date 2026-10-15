@@ -1,6 +1,6 @@
 <?php
 $courseName ='Laravel Fundamental';
-$fee =3500000;
+$fee =350000;
 $participantCount = 2;
 $discountPercent = 10;
 $adminFee = 25000;
