@@ -1212,3 +1212,201 @@ footer {
         transition: none;
     }
 }
+/* ==========================================================
+   Kalkulator Biaya KursusKu (fee-calculator.php)
+   Tempel di bagian bawah assets/css/style.css
+   ========================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap");
+
+.calc-page {
+    --rose-900: #5b0f3a;
+    --rose-700: #be185d;
+    --rose-500: #ec4899;
+    --rose-200: #fbcfe8;
+    --rose-100: #fce7f3;
+    --rose-50: #fff1f7;
+    --ink: #3b1230;
+    --muted: #7a5470;
+
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: clamp(1rem, 4vw, 3rem);
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink);
+    line-height: 1.6;
+    background:
+        radial-gradient(60rem 30rem at 85% -10%, #ffd6ea 0%, transparent 60%),
+        radial-gradient(40rem 25rem at -10% 110%, #ffe4f1 0%, transparent 60%),
+        linear-gradient(135deg, #fff5fa 0%, #ffe6f2 100%);
+}
+
+.calc-page *,
+.calc-page *::before,
+.calc-page *::after {
+    box-sizing: border-box;
+}
+
+/* Kartu */
+.calc-card {
+    width: min(100%, 44rem);
+    padding: clamp(1.5rem, 5vw, 2.75rem);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border: 1px solid var(--rose-200);
+    border-radius: 1.5rem;
+    box-shadow:
+        0 1px 0 #fff inset,
+        0 24px 48px -24px rgba(190, 24, 93, 0.35);
+}
+
+.calc-header {
+    margin-bottom: 1.75rem;
+}
+
+.calc-header h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.7rem, 5vw, 2.3rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--rose-900);
+}
+
+/* Nama kursus sebagai chip */
+.calc-course {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.calc-course strong {
+    padding: 0.25rem 0.8rem;
+    color: var(--rose-700);
+    font-weight: 700;
+    background: var(--rose-50);
+    border: 1px solid var(--rose-200);
+    border-radius: 999px;
+}
+
+/* Tabel */
+.calc-table {
+    width: 100%;
+    margin-bottom: 1.75rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: 1px solid var(--rose-200);
+    border-radius: 1rem;
+    background: #fff;
+}
+
+.calc-table th,
+.calc-table td {
+    padding: 0.9rem 1.25rem;
+    text-align: left;
+}
+
+.calc-table td:last-child,
+.calc-table thead th:last-child,
+.calc-table tfoot td {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.calc-table thead th {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--rose-700);
+    background: var(--rose-50);
+    border-bottom: 1px solid var(--rose-200);
+}
+
+.calc-table tbody td {
+    border-bottom: 1px solid var(--rose-100);
+}
+
+.calc-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.calc-table tbody td:first-child {
+    color: var(--muted);
+}
+
+.calc-table tbody td:last-child {
+    font-weight: 600;
+}
+
+.calc-table tbody tr:hover td {
+    background: #fffafc;
+}
+
+/* Diskon: pengurang, ditandai warna lebih terang */
+.calc-table .is-discount td:last-child {
+    color: var(--rose-500);
+}
+
+/* Total akhir: bagian paling menonjol */
+.calc-table .is-total th,
+.calc-table .is-total td {
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--rose-500), var(--rose-700));
+}
+
+.calc-table .is-total th {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.calc-table .is-total td {
+    font-size: clamp(1.25rem, 4vw, 1.6rem);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+/* Tombol */
+.calc-card .button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font: inherit;
+    font-weight: 700;
+    color: var(--rose-700);
+    text-decoration: none;
+    background: var(--rose-50);
+    border: 1px solid var(--rose-200);
+    border-radius: 999px;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.calc-card .button:hover {
+    background: var(--rose-100);
+    transform: translateY(-2px);
+}
+
+.calc-card .button:focus-visible {
+    outline: 3px solid var(--rose-900);
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    .calc-table th,
+    .calc-table td {
+        padding: 0.75rem 0.9rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .calc-card .button {
+        transition: none;
+    }
+}
