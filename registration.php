@@ -26,7 +26,7 @@
 
 <section class="form-card">
 
-    <form action="process-registration.php" method="POST" class="registration-form">
+    <form action="process-registration.php" method="GET" class="registration-form">
 
  <input type="hidden" name="source" value="week-05">
 <div class="form-group">
