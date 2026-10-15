@@ -271,7 +271,10 @@ function renderFoot(): void
 // =====================================
 // JIKA DATA TIDAK VALID
 // =====================================
+// JIKA DATA TIDAK VALID
 if ($errors !== []) {
+    http_response_code(422);
+
     renderHead('Data Belum Valid');
     ?>
     <div class="banner banner-error">
