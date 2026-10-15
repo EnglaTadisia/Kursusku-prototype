@@ -1410,3 +1410,65 @@ footer {
         transition: none;
     }
 }
+/* ==========================================================
+   Tambahan untuk string-test.php
+   Tempel di bagian bawah assets/css/style.css
+   (setelah isi utility-page.css, karena memakai variabel
+   --rose-* dan style .utility-card / .button dari sana)
+   ========================================================== */
+
+/* Teks awal */
+.utility-card .string-source {
+    margin: 0 0 1.5rem;
+    padding: 0.9rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    background: var(--rose-50);
+    border: 1px solid var(--rose-200);
+    border-left: 6px solid var(--rose-500);
+    border-radius: 1rem;
+}
+
+.utility-card .string-source code {
+    display: block;
+    margin-top: 0.2rem;
+    padding: 0;
+    font-size: 1.1rem;
+    background: none;
+    border: 0;
+    white-space: pre;
+}
+
+/* Daftar hasil */
+.utility-card .result-list {
+    margin: 0 0 1.75rem;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid var(--rose-200);
+    border-radius: 1rem;
+}
+
+.utility-card .result-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.85rem 1.25rem;
+    border-bottom: 1px solid #fce7f3;
+}
+
+.utility-card .result-list li:last-child {
+    border-bottom: 0;
+}
+
+.utility-card .result-list li:hover {
+    background: #fffafc;
+}
+
+.utility-card .result-list strong {
+    font-weight: 700;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
